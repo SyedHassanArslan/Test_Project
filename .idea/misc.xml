@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/circle_outline.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/file_selected.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/gradient45.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_appliances.xml" value="0.191" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_arrow_down.xml" value="0.191" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_bed.xml" value="0.191" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_camera.xml" value="0.191" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_cart_outline.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_living.xml" value="0.191" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_package.xml" value="0.109" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_product.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_search.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/ic_storage.xml" value="0.191" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/outline_view.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/round_corner_5dp.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/selected_Cart.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/selected_Products.xml" value="0.129" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/drawable/selected_home.xml" value="0.191" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/layout/activity_detail.xml" value="0.6" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/layout/activity_main.xml" value="0.44166666666666665" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/layout/fragment_home.xml" value="0.6" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/layout/fragment_other.xml" value="0.6" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/layout/post_item.xml" value="0.6" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/menu/bottom_navigation_main.xml" value="0.6" />
+        <entry key="..\:/projects/TestProject/app/src/main/res/menu/drop_down.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

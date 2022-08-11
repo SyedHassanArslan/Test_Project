@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.ui.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="Back"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:drawableStartCompat="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCategories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:paddingVertical="10dp"
+                android:text="@string/ourCategories"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productImage"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <TextView
+                android:id="@+id/tvStars"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_corner_5dp"
+                android:backgroundTint="#DCA604"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text="4.5"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/ic_baseline_star_24"
+                app:layout_constraintStart_toStartOf="@id/tvCategories"
+                app:layout_constraintTop_toBottomOf="@+id/tvCategories" />
+
+            <TextView
+                android:id="@+id/tvRationAndReview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:drawablePadding="10dp"
+                android:paddingVertical="10dp"
+                android:text="@string/ourCategories"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tvStars"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvStars"
+                app:layout_constraintTop_toTopOf="@+id/tvStars" />
+
+            <TextView
+                android:id="@+id/tvSaleType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:paddingVertical="10dp"
+                android:text="@string/ourCategories"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tvCategories"
+                app:layout_constraintTop_toBottomOf="@+id/tvStars" />
+
+            <TextView
+                android:id="@+id/tvCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:paddingVertical="10dp"
+                android:text="@string/ourCategories"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSaleType"
+                app:layout_constraintEnd_toEndOf="@+id/tvCategories"
+                app:layout_constraintTop_toTopOf="@+id/tvSaleType" />
+
+            <TextView
+                android:id="@+id/tvRefund"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:paddingVertical="10dp"
+                android:text="@string/ourCategories"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tvCategories"
+                app:layout_constraintTop_toBottomOf="@+id/tvSaleType" />
+
+            <TextView
+                android:id="@+id/tvRefundCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:paddingVertical="10dp"
+                android:text="@string/ourCategories"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRefund"
+                app:layout_constraintEnd_toEndOf="@+id/tvCategories"
+                app:layout_constraintTop_toTopOf="@+id/tvRefund" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_corner_5dp"
+                android:backgroundTint="#DA03A9F4"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRefund"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <TextView
+                android:id="@+id/tvPro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawablePadding="10dp"
+                android:text="@string/get_10_off_on_this_product_by_using_coupon_code_rent10"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/ivSurprise"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/tvSeeAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:text="@string/view_all_offers"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/view"
+                app:layout_constraintEnd_toStartOf="@+id/ivSurprise"
+                app:layout_constraintStart_toStartOf="@+id/tvPro" />
+
+            <ImageView
+                android:id="@+id/ivSurprise"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/surprise_box"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="@id/view"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/tvCategories"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintWidth_percent="0.9">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvSize"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:paddingVertical="10dp"-->
+<!--                    android:text="@string/select_size"-->
+<!--                    android:textColor="@color/textColor"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvSize1"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:paddingVertical="10dp"-->
+<!--                    android:background="@drawable/circle_outline"-->
+<!--                    android:text="@string/ourCategories"-->
+<!--                    android:textColor="@color/textColor"-->
+<!--                    android:textSize="12sp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

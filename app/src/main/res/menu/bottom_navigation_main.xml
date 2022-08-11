@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_file"
+        android:enabled="true"
+        android:icon="@drawable/selected_home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_recent"
+        android:enabled="true"
+        android:icon="@drawable/selected_products"
+        android:title="@string/products"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_favorite"
+        android:enabled="true"
+        android:icon="@drawable/selected_cart"
+        android:title="@string/cart"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_download"
+        android:enabled="true"
+        android:icon="@drawable/selected_profile"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom" />
+</menu>

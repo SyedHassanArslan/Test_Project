@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="test.ui.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:animateLayoutChanges="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/toolbar_image"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gradient45"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rentickle"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <TextView
+                android:id="@+id/tvDropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:paddingVertical="10dp"
+                android:text="@string/rentickle"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:drawableEndCompat="@drawable/ic_arrow_down"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:background="@drawable/round_corner_5dp"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:hint="@string/search_for_furniture_appliances_etc"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9"
+                app:layout_constraintWidth_percent="0.9" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvCategories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:paddingVertical="10dp"
+            android:text="@string/ourCategories"
+            android:textColor="@color/textColor"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_arrow_down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintCategories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outline_view"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategories"
+            app:layout_constraintWidth_percent="0.9">
+
+            <TextView
+                android:id="@+id/ivBedRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:text="@string/bed_room"
+                android:drawablePadding="10dp"
+                android:textColor="@color/textColor"
+                app:drawableTopCompat="@drawable/ic_bed"
+                app:layout_constraintEnd_toStartOf="@+id/ivLivingRoom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ivLivingRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:text="@string/living_room"
+                android:textColor="@color/textColor"
+                app:drawableTopCompat="@drawable/ic_living"
+                app:layout_constraintBottom_toBottomOf="@id/ivBedRoom"
+                android:drawablePadding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/ivDSLR"
+                app:layout_constraintStart_toEndOf="@+id/ivBedRoom"
+                app:layout_constraintTop_toTopOf="@id/ivBedRoom" />
+
+            <TextView
+                android:id="@+id/ivDSLR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:drawablePadding="10dp"
+                android:text="@string/dslr"
+                android:textColor="@color/textColor"
+                app:drawableTopCompat="@drawable/ic_camera"
+                app:layout_constraintBottom_toBottomOf="@id/ivBedRoom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivLivingRoom"
+                app:layout_constraintTop_toTopOf="@id/ivBedRoom" />
+
+            <Space
+                android:id="@+id/spacer"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/ivBedRoom" />
+
+            <TextView
+                android:id="@+id/ivAppliances"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:text="@string/appliances"
+                android:textColor="@color/textColor"
+                app:drawableTopCompat="@drawable/ic_appliances"
+                android:drawablePadding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/ivStorage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spacer" />
+
+            <TextView
+                android:id="@+id/ivStorage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:text="@string/storage"
+                android:textColor="@color/textColor"
+                android:drawablePadding="10dp"
+                app:drawableTopCompat="@drawable/ic_storage"
+                app:layout_constraintBottom_toBottomOf="@id/ivAppliances"
+                app:layout_constraintEnd_toStartOf="@+id/ivPackage"
+                app:layout_constraintStart_toEndOf="@+id/ivAppliances"
+                app:layout_constraintTop_toTopOf="@id/ivAppliances" />
+
+            <TextView
+                android:id="@+id/ivPackage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:text="@string/packages"
+                android:textColor="@color/textColor"
+                android:drawablePadding="10dp"
+                app:drawableTopCompat="@drawable/ic_package"
+                app:layout_constraintBottom_toBottomOf="@id/ivAppliances"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivStorage"
+                app:layout_constraintTop_toTopOf="@id/ivAppliances" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvTrending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:paddingVertical="10dp"
+            android:text="@string/trending_products"
+            android:textColor="@color/textColor"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_arrow_down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintCategories"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTrending"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/post_item"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTrending" />
+
+        <TextView
+            android:id="@+id/tvRecentView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:paddingVertical="10dp"
+            android:text="@string/recently_viewed_products"
+            android:visibility="gone"
+            android:textColor="@color/textColor"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_arrow_down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewTrending"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerRecentView"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:listitem="@layout/post_item"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRecentView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
