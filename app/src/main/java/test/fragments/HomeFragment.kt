@@ -61,6 +61,7 @@ class HomeFragment : Fragment() {
         intent.putExtra("image",it.image)
         intent.putExtra("cost", it.cost)
         intent.putExtra("star", it.star)
+        intent.putExtra("type",it.saleType)
         intent.putExtra("noOfRating", it.noOfRatings)
         intent.putExtra("noOfReview", it.noOfReviews)
         val options = ActivityOptionsCompat.makeSceneTransitionAnimation(
