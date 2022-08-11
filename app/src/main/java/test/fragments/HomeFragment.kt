@@ -37,21 +37,14 @@ class HomeFragment : Fragment() {
     private fun setAdapter() {
         adapterTrending = AdapterForPosts {
             visibleRecyclerView()
-            if (!recentPostViewAdapter.getList().contains(it))
-                recentPostViewAdapter.addRecent(it)
-            else {
-                recentPostViewAdapter.getList().remove(it)
-//                recentPostViewAdapter.notifyItemRemoved(recentPostViewAdapter.getList().indexOf(it))
-//                Handler(Looper.getMainLooper()).postDelayed({
-//                    recentPostViewAdapter.addRecent(it)
-//                },1000)
-            }
+            recentPostViewAdapter.getList().remove(it)
+            recentPostViewAdapter.notifyDataSetChanged()
+            recentPostViewAdapter.addRecent(it)
             binding.recyclerRecentView.smoothScrollToPosition(0)
         }
         binding.recyclerViewTrending.adapter = adapterTrending
 
         recentPostViewAdapter = AdapterForPosts {
-//            recentPostViewAdapter.addRecent(it)
         }
         binding.recyclerRecentView.adapter = recentPostViewAdapter
     }
