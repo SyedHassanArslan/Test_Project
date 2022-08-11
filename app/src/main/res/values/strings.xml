@@ -24,4 +24,5 @@
     <string name="back">Back</string>
     <string name="refundable_deposit">Refundable Deposit</string>
     <string name="mixText">%1$s Ratings | %2$s Reviews</string>
+    <string name="add_to_cart">Add to Cart</string>
 </resources>

@@ -19,7 +19,6 @@ import test.adapters.AdapterForPosts
 import test.data.Posts
 import test.ui.DetailActivity
 
-
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
@@ -39,29 +38,29 @@ class HomeFragment : Fragment() {
     }
 
     private fun setAdapter() {
-        adapterTrending = AdapterForPosts {item,image->
+        adapterTrending = AdapterForPosts { item, image ->
             visibleRecyclerView()
-            openDetailScreen(item,image)
+            openDetailScreen(item, image)
         }
         binding.recyclerViewTrending.adapter = adapterTrending
 
-        recentPostViewAdapter = AdapterForPosts {item,image->
-            openDetailScreen(item,image)
+        recentPostViewAdapter = AdapterForPosts { item, image ->
+            openDetailScreen(item, image)
         }
         binding.recyclerRecentView.adapter = recentPostViewAdapter
     }
 
-    private fun openDetailScreen(it: Posts,imageView: ImageView) {
+    private fun openDetailScreen(it: Posts, imageView: ImageView) {
         recentPostViewAdapter.getList().remove(it)
         recentPostViewAdapter.notifyDataSetChanged()
         recentPostViewAdapter.addRecent(it)
         binding.recyclerRecentView.smoothScrollToPosition(0)
         val intent = Intent(requireContext(), DetailActivity::class.java)
         intent.putExtra("name", it.name)
-        intent.putExtra("image",it.image)
+        intent.putExtra("image", it.image)
         intent.putExtra("cost", it.cost)
         intent.putExtra("star", it.star)
-        intent.putExtra("type",it.saleType)
+        intent.putExtra("type", it.saleType)
         intent.putExtra("noOfRating", it.noOfRatings)
         intent.putExtra("noOfReview", it.noOfReviews)
         val options = ActivityOptionsCompat.makeSceneTransitionAnimation(
