@@ -11,6 +11,7 @@
         android:layout_height="150dp"
         app:roundPercent="0.05"
         android:scaleType="centerCrop"
+        android:transitionName="transition"
         android:src="@drawable/toolbar_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

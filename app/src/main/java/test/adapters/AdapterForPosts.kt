@@ -4,13 +4,14 @@ import test.data.Posts
 import alldocumentreader.officereader.viewer.filereader.pdf.excel.testproject.databinding.PostItemBinding
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import java.io.File
 
-class AdapterForPosts(val click:(Posts)->Unit) : RecyclerView.Adapter<AdapterForPosts.ViewHolder>() {
+class AdapterForPosts(val click:(Posts,ImageView)->Unit) : RecyclerView.Adapter<AdapterForPosts.ViewHolder>() {
 
     private val arrayList = ArrayList<Posts>()
 
@@ -33,7 +34,7 @@ class AdapterForPosts(val click:(Posts)->Unit) : RecyclerView.Adapter<AdapterFor
             boldPrice(binding.tvCost,post.cost)
 
             binding.root.setOnClickListener {
-                click.invoke(post)
+                click.invoke(post,binding.postImage)
             }
         }
     }

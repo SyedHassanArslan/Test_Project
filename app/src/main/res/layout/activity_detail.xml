@@ -29,6 +29,7 @@
             <androidx.constraintlayout.utils.widget.ImageFilterView
                 android:id="@+id/productImage"
                 android:layout_width="match_parent"
+                android:transitionName="transition"
                 android:layout_height="300dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
